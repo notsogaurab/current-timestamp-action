@@ -23,3 +23,7 @@ jobs:
         id: timestamp
         with:
           timezone: 'America/New_York'
+          format: 'YYYY-MM-DD HH:mm:ss'
+
+      - name: Get the output
+        run: echo "The time is ${{ steps.timestamp.outputs.time }}"
