@@ -10,6 +10,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
+      - run: npm install
       - uses: notsogaurab/current-timestamp-action@v1.0
         id: timestamp
         with:
