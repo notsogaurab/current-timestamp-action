@@ -22,7 +22,7 @@ jobs:
         uses: ./
         id: timestamp
         with:
-          timezone: 'Asia/Kathmandu'
+          timezone: 'NPT'
           format: 'YYYY-MM-DD HH:mm:ss'
 
       - name: Get the output
