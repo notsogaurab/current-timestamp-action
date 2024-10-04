@@ -3,7 +3,7 @@ description: "Outputs the current timestamp."
 inputs:
   timezone:
     description: "Timezone for the timestamp"
-    required: false
+    required: true
     default: "UTC"
 outputs:
   timestamp:
