@@ -1,17 +1,17 @@
-name: 'Use Timestamp Action'
+name: Use Timestamp Action
 
-on: [push]
+on:
+  push:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    name: Time Stamp Action
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-      - run: npm install
-      - uses: notsogaurab/current-timestamp-action@v1.0
+
+      - name: Use Time Stamp Action
+        uses: notsogaurab/current-timestamp-action@v1.0
         id: timestamp
         with:
           timezone: 'America/New_York'
