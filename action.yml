@@ -9,5 +9,5 @@ outputs:
   timestamp:
     description: "The current timestamp in the specified timezone"
 runs:
-  using: "node16"
+  using: "node20"
   main: "index.js"
