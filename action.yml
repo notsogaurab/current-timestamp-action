@@ -1,0 +1,13 @@
+name: "Timestamp Action"
+description: "Outputs the current timestamp."
+inputs:
+  timezone:
+    description: "Timezone for the timestamp"
+    required: false
+    default: "UTC"
+outputs:
+  timestamp:
+    description: "The current timestamp in the specified timezone"
+runs:
+  using: "node16"
+  main: "index.js"
